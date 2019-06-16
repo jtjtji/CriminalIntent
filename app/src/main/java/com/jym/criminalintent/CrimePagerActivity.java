@@ -16,15 +16,18 @@ import java.util.UUID;
 public class CrimePagerActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private List<Crime> mCrimes;
+
+
     private static final String EXTRA_CRIME_ID = "com.jym.criminalIntent_id";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crime_pager);
-        UUID crimeId=(UUID)getIntent().getSerializableExtra(EXTRA_CRIME_ID);
         mCrimes = CrimeLab.get(this).getCrimes();
+        UUID crimeId=(UUID)getIntent().getSerializableExtra(EXTRA_CRIME_ID);
         FragmentManager fragmentManager = getSupportFragmentManager();
+        mViewPager=(ViewPager) findViewById(R.id.activity_crime_pager_view_pager);
         mViewPager.setAdapter(new FragmentStatePagerAdapter(fragmentManager) {
 
             @Override
@@ -41,8 +44,8 @@ public class CrimePagerActivity extends AppCompatActivity {
 
     }
 
-    public static Intent newIntent(Context packagecontext, UUID crimeId) {
-        Intent intent = new Intent(packagecontext, CrimeActivity.class);
+    public static Intent newIntent(Context packageContext, UUID crimeId) {
+        Intent intent = new Intent(packageContext, CrimePagerActivity.class);
         intent.putExtra(EXTRA_CRIME_ID, crimeId);
         return intent;
     }

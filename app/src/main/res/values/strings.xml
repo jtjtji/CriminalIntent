@@ -3,5 +3,5 @@
     <string name="crime_title_hint">输入一个Crime</string>
     <string name="crime_title_label">标题</string>
     <string name="crime_details_label">详细说明</string>
-    <string name="crime_solved_label">处理结果</string>
+    <string name="crime_solved_label">crime_solved_label</string>
 </resources>
