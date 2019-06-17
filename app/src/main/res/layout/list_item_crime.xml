@@ -33,7 +33,7 @@
         android:layout_marginBottom="16dp"
         android:text="Crime Date"
         android:textColor="#FF5722"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/crime_solved"
         app:layout_constraintHorizontal_bias="0.07"
@@ -42,12 +42,18 @@
 
     <ImageView
         android:id="@+id/crime_solved"
-        android:layout_width="46dp"
-        android:layout_height="37dp"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_solved" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:orientation="vertical" />
 
 </android.support.constraint.ConstraintLayout>
