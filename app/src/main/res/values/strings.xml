@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Crime</string>
-    <string name="crime_title_hint">输入一个Crime</string>
-    <string name="crime_title_label">标题</string>
-    <string name="crime_details_label">详细说明</string>
+    <string name="crime_title_hint">Input a Crime</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Crime Details</string>
     <string name="crime_solved_label">Solved</string>
-    <string name="date_picker_title">Crime发生时间</string>
+    <string name="date_picker_title">Crime Time</string>
+    <string name="new_crime">New Crime</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d crimes</string>
 </resources>

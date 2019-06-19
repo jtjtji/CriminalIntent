@@ -13,7 +13,11 @@ public class Crime {
 
     //constructor
     public Crime() {
-        mId = UUID.randomUUID();
+        this(UUID.randomUUID());
+    }
+
+    public Crime(UUID id) {
+        mId = id;
         mDate = new Date();
     }
     //私有成员设置和获得方法
