@@ -17,6 +17,11 @@ import android.widget.EditText;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ *CrimeFragment class
+ * @author JiYongMing
+ * @date 2019/6/18
+ */
 public class CrimeFragment extends Fragment {
     private Crime mCrime;
     private EditText mTitleField;

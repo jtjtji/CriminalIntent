@@ -8,6 +8,9 @@ import com.jym.criminalintent.Crime;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * @author jym
+ */
 public class CrimeCursorWrapper extends CursorWrapper {
     public CrimeCursorWrapper(Cursor cursor) {
         super(cursor);

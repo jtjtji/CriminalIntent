@@ -6,6 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.jym.criminalintent.database.CrimeDbSchema.CrimeTable;
 
+/**
+ * @author jym
+ */
 public class CrimeBaseHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
     private static final String DATABASE_NAME = "crimeBase.db";

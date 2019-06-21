@@ -20,6 +20,11 @@ import android.widget.Toast;
 
 import java.util.List;
 
+/**
+ * CrimeListFragment class
+ * @author jym
+ * @date 2019/6/15
+ */
 public class CrimeListFragment extends Fragment {
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
@@ -41,11 +46,11 @@ public class CrimeListFragment extends Fragment {
         if (savedInstanceState != null) {
             mSubtitleVisible = savedInstanceState.getBoolean(SAVED_SUBTITLE_VISIBLE);
         }
-        updateUI();
+        updateUi();
         return view;
     }
 
-    //ViewHolder 内部类
+    /**ViewHolder 内部类*/
     private class CrimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView mTitleTextView;
         private TextView mDateTextView;
@@ -74,7 +79,7 @@ public class CrimeListFragment extends Fragment {
         }
     }
 
-    //Adapter内部类
+    /**Adapter内部类*/
     private class CrimeAdapter extends RecyclerView.Adapter<CrimeHolder> {
         private List<Crime> mCrimes;
 
@@ -114,7 +119,7 @@ public class CrimeListFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        updateUI();
+        updateUi();
     }
 
 
@@ -156,7 +161,7 @@ public class CrimeListFragment extends Fragment {
         outState.putBoolean(SAVED_SUBTITLE_VISIBLE, mSubtitleVisible);
     }
 
-    private void updateUI() {
+    private void updateUi() {
         CrimeLab crimeLab = CrimeLab.get(getActivity());
         List<Crime> crimes = crimeLab.getCrimes();
         if (mAdapter == null) {
@@ -181,4 +186,5 @@ public class CrimeListFragment extends Fragment {
         activity.getSupportActionBar().setSubtitle(subtitle);
     }
 }
+
 

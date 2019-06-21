@@ -1,15 +1,16 @@
 package com.jym.criminalintent;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
+/**
+ * @author jym
+ */
 public abstract class BaseFragmentActivity extends AppCompatActivity {
-    /*
-     *
-     *子类要实现该抽象方法
+    /**
+     * 子类要实现该抽象方法
      */
     protected abstract Fragment createFragment();
 

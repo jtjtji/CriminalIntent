@@ -5,13 +5,18 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.UUID;
 
+/**
+ * @author jym
+ */
 public class Crime {
     private UUID mId;
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
 
-    //constructor
+    /**
+     * constructor
+     */
     public Crime() {
         this(UUID.randomUUID());
     }
